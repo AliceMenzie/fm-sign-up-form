@@ -10,7 +10,7 @@ module.exports = {
         darkBlue: "hsl(249, 10%, 26%)",
         greyBlue: "hsl(246, 25%, 77%)",
         purple: "#7e5bef",
-        pink: "#ff49db",
+        purpleFocus: "#5E54A4",
         grey: "#3D3B48",
       },
       fontFamily: {
