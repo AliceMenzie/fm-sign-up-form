@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/AliceMenzie/fm-sign-up-form/static/css/main.03f395e0.css",
-    "main.js": "/AliceMenzie/fm-sign-up-form/static/js/main.bb6ac194.js",
-    "static/js/787.2bff031f.chunk.js": "/AliceMenzie/fm-sign-up-form/static/js/787.2bff031f.chunk.js",
-    "static/media/bg-intro-desktop.png": "/AliceMenzie/fm-sign-up-form/static/media/bg-intro-desktop.059183eea52640c5068d.png",
-    "index.html": "/AliceMenzie/fm-sign-up-form/index.html",
-    "static/media/icon-error.svg": "/AliceMenzie/fm-sign-up-form/static/media/icon-error.b72f792e9c900128f5c88f10a0d8d4b7.svg",
-    "main.03f395e0.css.map": "/AliceMenzie/fm-sign-up-form/static/css/main.03f395e0.css.map",
-    "main.bb6ac194.js.map": "/AliceMenzie/fm-sign-up-form/static/js/main.bb6ac194.js.map",
-    "787.2bff031f.chunk.js.map": "/AliceMenzie/fm-sign-up-form/static/js/787.2bff031f.chunk.js.map"
+    "main.css": "/fm-sign-up-form/static/css/main.03f395e0.css",
+    "main.js": "/fm-sign-up-form/static/js/main.ac958d44.js",
+    "static/js/787.2bff031f.chunk.js": "/fm-sign-up-form/static/js/787.2bff031f.chunk.js",
+    "static/media/bg-intro-desktop.png": "/fm-sign-up-form/static/media/bg-intro-desktop.059183eea52640c5068d.png",
+    "index.html": "/fm-sign-up-form/index.html",
+    "static/media/icon-error.svg": "/fm-sign-up-form/static/media/icon-error.b72f792e9c900128f5c88f10a0d8d4b7.svg",
+    "main.03f395e0.css.map": "/fm-sign-up-form/static/css/main.03f395e0.css.map",
+    "main.ac958d44.js.map": "/fm-sign-up-form/static/js/main.ac958d44.js.map",
+    "787.2bff031f.chunk.js.map": "/fm-sign-up-form/static/js/787.2bff031f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.03f395e0.css",
-    "static/js/main.bb6ac194.js"
+    "static/js/main.ac958d44.js"
   ]
 }
