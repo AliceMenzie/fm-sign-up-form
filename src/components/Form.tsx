@@ -20,12 +20,13 @@ export default function Form() {
 
   return (
     <form
-      className="font-poppins h-[442px] w-[327px] bg-white flex flex-col items-center justify-around rounded-lg py-3"
+      className="shadow-custom2 font-poppins h-[442px] w-[327px] bg-white flex flex-col items-center justify-around rounded-lg py-3 mt-6
+      "
       onSubmit={handleSubmit(onSubmit)}
     >
       <div className="relative flex justify-center items-center flex-col">
         <input
-          className={`border text-grey placeholder:capitalize placeholder:font-bold w-[279px] h-[56px] rounded-md pl-[14px] ${
+          className={`border text-grey placeholder:capitalize placeholder:font-semibold w-[279px] h-[56px] rounded-md pl-[14px] ${
             errors.firstName && "border border-red text-red"
           }`}
           placeholder="first name"
@@ -42,7 +43,7 @@ export default function Form() {
       </div>
       <div className="relative flex justify-center items-center flex-col">
         <input
-          className={`border text-grey capitalize font-bold w-[279px] h-[56px] rounded-md pl-[14px] ${
+          className={`border text-grey placeholder:capitalize placeholder:font-semibold w-[279px] h-[56px] rounded-md pl-[14px] ${
             errors.lastName && "border border-red text-red"
           }`}
           placeholder="Last Name"
@@ -62,7 +63,7 @@ export default function Form() {
       </div>
       <div className="relative flex justify-center items-center flex-col">
         <input
-          className={`border text-grey placeholder:capitalize placeholder:font-bold w-[279px] h-[56px] rounded-md pl-[14px] ${
+          className={`border text-grey placeholder:capitalize placeholder:font-semibold w-[279px] h-[56px] rounded-md pl-[14px] ${
             errors.email && "border border-red text-red"
           }`}
           placeholder="email address"
@@ -82,7 +83,7 @@ export default function Form() {
       </div>
       <div className="relative flex justify-center items-center flex-col">
         <input
-          className={`border text-grey placeholder:capitalize placeholder:font-bold w-[279px] h-[56px] rounded-md pl-[14px] ${
+          className={`border text-grey placeholder:capitalize placeholder:font-semibold w-[279px] h-[56px] rounded-md pl-[14px] ${
             errors.password && "border border-red text-red"
           }`}
           placeholder="password"
@@ -104,9 +105,9 @@ export default function Form() {
       <input
         className="font-poppins font-semibold bg-green text-white uppercase w-[279px] h-[56px] rounded-md "
         type="submit"
-        value="Claim your free trial"
+        value="claim your free trial"
       />
-      <p className="font-poppins text-center text-greyBlue text-xs font-semibold mx-10">
+      <p className="font-poppins text-center text-greyBlue text-xs mx-10">
         By clicking the button, you are agreeing to our {/* <span> */}
         <a className="text-red font-bold" href="###">
           Terms and Services
