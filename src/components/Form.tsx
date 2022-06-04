@@ -20,14 +20,14 @@ export default function Form() {
 
   return (
     <form
-      className="shadow-custom2 font-poppins h-[442px] w-[327px] bg-white flex flex-col items-center justify-around rounded-lg py-3 mt-6
+      className="shadow-custom2 font-poppins h-[442px] md:h-[474px] w-[327px] md:w-[540px] bg-white flex flex-col items-center justify-around rounded-lg py-3 md:py-6 mt-6 
       "
       onSubmit={handleSubmit(onSubmit)}
     >
       <div className="relative flex justify-center items-center flex-col">
         <input
-          className={`border text-grey placeholder:capitalize placeholder:font-semibold w-[279px] h-[56px] rounded-md pl-[14px] ${
-            errors.firstName && "border border-red text-red"
+          className={`border text-grey placeholder:capitalize placeholder:font-semibold focus:outline-purpleFocus focus:outline-[0.5px] w-[279px] md:w-[460px] h-[56px] rounded-md pl-[14px] ${
+            errors.firstName && "border-2 border-red text-red focus:outline-red"
           }`}
           placeholder="first name"
           {...register("firstName", { required: true })}
@@ -43,8 +43,8 @@ export default function Form() {
       </div>
       <div className="relative flex justify-center items-center flex-col">
         <input
-          className={`border text-grey placeholder:capitalize placeholder:font-semibold w-[279px] h-[56px] rounded-md pl-[14px] ${
-            errors.lastName && "border border-red text-red"
+          className={`border text-grey placeholder:capitalize placeholder:font-semibold focus:outline-purpleFocus focus:outline-[0.5px] w-[279px] md:w-[460px] h-[56px] rounded-md pl-[14px] ${
+            errors.lastName && "border-2 border-red text-red focus:outline-red"
           }`}
           placeholder="Last Name"
           {...register("lastName", { required: true })}
@@ -63,8 +63,8 @@ export default function Form() {
       </div>
       <div className="relative flex justify-center items-center flex-col">
         <input
-          className={`border text-grey placeholder:capitalize placeholder:font-semibold w-[279px] h-[56px] rounded-md pl-[14px] ${
-            errors.email && "border border-red text-red"
+          className={`border text-grey placeholder:capitalize placeholder:font-semibold focus:outline-purpleFocus focus:outline-[0.5px] w-[279px] md:w-[460px] h-[56px] rounded-md pl-[14px] ${
+            errors.email && "border-2 border-red text-red focus:outline-red"
           }`}
           placeholder="email address"
           {...register("email", {
@@ -77,14 +77,14 @@ export default function Form() {
         )}
         {errors.email && (
           <span className="text-red text-xs font-bold border-red self-end">
-            Email cannot be empty
+            Looks like this is not an email
           </span>
         )}
       </div>
       <div className="relative flex justify-center items-center flex-col">
         <input
-          className={`border text-grey placeholder:capitalize placeholder:font-semibold w-[279px] h-[56px] rounded-md pl-[14px] ${
-            errors.password && "border border-red text-red"
+          className={`border text-grey placeholder:capitalize placeholder:font-semibold focus:outline-purpleFocus focus:outline-[0.5px] w-[279px] md:w-[460px] h-[56px] rounded-md pl-[14px] ${
+            errors.password && "border-2 border-red text-red focus:outline-red"
           }`}
           placeholder="password"
           type="password"
@@ -103,7 +103,7 @@ export default function Form() {
       </div>
 
       <input
-        className="font-poppins font-semibold bg-green text-white uppercase w-[279px] h-[56px] rounded-md "
+        className="cursor-pointer hover:brightness-110 shadow-custom font-poppins font-semibold bg-green text-white uppercase w-[279px] md:w-[460px] h-[56px] rounded-md "
         type="submit"
         value="claim your free trial"
       />
