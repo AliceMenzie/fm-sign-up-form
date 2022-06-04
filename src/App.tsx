@@ -1,7 +1,6 @@
 import React from "react";
 import Banner from "./components/Banner";
 import Form from "./components/Form";
-import bgMobile from "./assets/images/bg-intro-mobile.png";
 import bgDesktop from "./assets/images/bg-intro-desktop.png";
 
 function App() {
