@@ -11,6 +11,10 @@ module.exports = {
         greyBlue: "hsl(246, 25%, 77%)",
         purple: "#7e5bef",
         pink: "#ff49db",
+        grey: "#3D3B48",
+      },
+      fontFamily: {
+        poppins: ["Poppins"],
       },
     },
   },
