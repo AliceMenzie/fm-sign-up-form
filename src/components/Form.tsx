@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import iconError from "../assets/images/icon-error.svg";
 
@@ -13,11 +13,20 @@ export default function Form() {
   const {
     register,
     handleSubmit,
+    reset,
 
-    formState: { errors },
+    formState: { errors, isSubmitSuccessful },
   } = useForm<Inputs>();
-  const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
 
+  const onSubmit: SubmitHandler<Inputs> = (data) =>
+    console.log("submitting form");
+
+  useEffect(() => {
+    if (isSubmitSuccessful) {
+      reset({ firstName: "", lastName: "", email: "", password: "" });
+      console.log("submitted successfully");
+    }
+  }, [isSubmitSuccessful, reset]);
   return (
     <form
       className="shadow-custom2 font-poppins h-[442px] md:h-[474px] w-[327px] md:w-[540px] bg-white flex flex-col items-center justify-around rounded-lg py-3 md:py-6 mt-6 
